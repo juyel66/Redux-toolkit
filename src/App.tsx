@@ -23,12 +23,12 @@ function App() {
     <>
 
 
-    <div>
+    <div className="text-center mt-16 text-5xl">
       <h1>Counter with Redux</h1>
-      <button onClick={()=> handleIncrement(5)}>Increment 5</button>
-      <button onClick={()=>  dispatch(increment(1))}>Increment</button>
-      <div>{count}</div>
-      <button onClick={handleDecrement}>Decrement</button>
+      <button className="outline bg-green-500 border-2 " onClick={()=> handleIncrement(5)}>Increment 5</button>
+      <button  className="outline bg-blue-500 border-2 " onClick={()=>  dispatch(increment(1))}>Increment</button>
+      <div className="text-6xl text-sky-500">{count}</div>
+      <button  className="outline bg-red-500 border-2 " onClick={handleDecrement}>Decrement</button>
 
     </div>
     
